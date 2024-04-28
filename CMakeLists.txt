@@ -140,7 +140,7 @@ if (${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
     if (GCC_VERSION VERSION_LESS 8.0)
 		MESSAGE(FATAL_ERROR "Need a 8.0 or newer GCC compiler. Current GCC: ${GCC_VERSION}")
     else ()
-        set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -msse -msse2 -msse3")
+        set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
     endif ()
 endif ()
 

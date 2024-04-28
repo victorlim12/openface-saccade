@@ -55,6 +55,8 @@ SET(Open_BLAS_INCLUDE_SEARCH_PATHS
   /usr/local/include
   /usr/include
   /usr/local/opt/openblas/include
+  /usr/include/aarch64-linux-gnu/
+  /usr/lib/aarch64-linux-gnu/
 )
 
 SET(Open_BLAS_LIB_SEARCH_PATHS
@@ -71,6 +73,8 @@ SET(Open_BLAS_LIB_SEARCH_PATHS
         /usr/lib/openblas-base
         /usr/lib/x86_64-linux-gnu
         /usr/lib64
+        /usr/include/aarch64-linux-gnu/
+        /usr/lib/aarch64-linux-gnu/
         /usr/lib
 		/usr/local/opt/openblas/lib
  )
