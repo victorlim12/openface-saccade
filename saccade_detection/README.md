@@ -18,3 +18,14 @@ Experiment run on: Macbook 13 Pro M1
 - Once openface detection subprocess is completed, frame annotation is buffered in the memory (save to csv for further processing every n frames)
 - The buffer result is passed to detect saccades function, whereby running sliding window (window size can be customized), to process the gaze_x and gaze_y angle change (averaged and thresholded within the defined value)
 - Once detected, update frame number in the queue (pointing that saccade took place)
+
+## What's added:
+- Plotting of eye gaze within the tracking function 
+- Support for video input (conversion of image to .ffmpeg)
+- Proper saccade tracking output, timeframe and frame index based annotation
+- Proper concatenation of annotation buffer
+- Include plotting of eye gaze for left and right eyes in the output
+
+## How to use:
+- make sure the container for openface is running and proper port interfacing is done
+- include `python input_stream.py --video {path}` flag to process one chunk of video, if not provided, it will default to webcam stream input
